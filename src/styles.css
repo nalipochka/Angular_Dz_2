@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+.resume {
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* justify-content: center; */
+  align-items: center;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  background-color:lightcyan;
+}
+
+.resume h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.resume h2 {
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.resume h3 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.resume p {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.resume ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.resume ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.resume ul li:before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+}

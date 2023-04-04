@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body style="margin-bottom: 20px; background-color:aquamarine;" class="resume">
+  <h2>Personal Information</h2>
+  <div class="personal-info-container">
+    <img [src]="imageURL" width="150px">
+    <div>
+      <p><strong>Fullname:</strong>{{surname}} {{name}} {{patronymic}}</p>
+      <p><strong>Age:</strong> {{age}}</p>
+      <p><strong>City:</strong> {{city}}</p>
+      <p><strong>Phone number:</strong>
+        <span [ngSwitch]="countryCode">
+          <span *ngSwitchCase="'US'">+1</span>
+          <span *ngSwitchCase="'CA'">+1</span>
+          <span *ngSwitchCase="'UA'">+380</span>
+          <span *ngSwitchDefault>+XX</span>
+        </span>
+        {{phoneNumber}}
+      </p>
+    </div>
+  </div>
+</body>
+</html>
